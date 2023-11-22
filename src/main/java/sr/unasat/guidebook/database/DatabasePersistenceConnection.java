@@ -60,7 +60,11 @@ public class DatabasePersistenceConnection implements PersistenceUnitInfo {
 
     @Override
     public List<String> getManagedClassNames() {
-        return List.of("sr.unasat.guidebook.entities.Guide");
+        return List.of(
+                "sr.unasat.guidebook.entities.Guide",
+                "sr.unasat.guidebook.entities.Address",
+                "sr.unasat.guidebook.entities.User"
+        );
     }
 
     @Override
